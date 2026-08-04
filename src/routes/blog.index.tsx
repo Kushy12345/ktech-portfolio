@@ -7,7 +7,7 @@ import { posts } from "@/data/site";
 const description =
   "Plain-language articles on web development, responsive design, digital marketing basics, Power BI for small business and drone photography — by Tarfa Elijah Kwembe.";
 
-export const Route = createFileRoute("/blog")({
+export const Route = createFileRoute("/blog/")({
   head: () => ({
     meta: [
       { title: "Blog | Notes on Web, Marketing & Data — K-Tech Solutions" },

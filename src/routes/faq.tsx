@@ -39,7 +39,7 @@ export const Route = createFileRoute("/faq")({
       },
     ],
   }),
-  component: Faq;
+  component: Faq,
 });
 
 function Faq() {
