@@ -89,7 +89,7 @@ function BlogPost() {
         <div className="mx-auto max-w-3xl">
           <div className="gold-rule" />
           <div className="mt-10 space-y-6">
-            {post.body.map((paragraph, i) => (
+            {post.body.map((paragraph: string, i: number) => (
               <Reveal key={i} delay={i * 40}>
                 <p className="text-base leading-[1.85] text-muted-foreground">{paragraph}</p>
               </Reveal>
