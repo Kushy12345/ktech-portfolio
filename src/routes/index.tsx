@@ -43,7 +43,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "K-Tech Solutions | Websites That Grow Small Businesses" },
       { property: "og:description", content: description },
       { property: "og:url", content: "/" },
-      { name: "twitter:title", content: "K-Tech Solutions" },
+      { name: "twitter:title", content: "K-Tech Solutions | Websites That Grow Small Businesses" },
       { name: "twitter:description", content: description },
     ],
     links: [{ rel: "canonical", href: "/" }],
