@@ -149,7 +149,7 @@ function CheckCard({
   status: number;
   ok: boolean;
   details: string[];
-  error?: string;
+  error?: string | undefined;
 }) {
   return (
     <article className={cn("premium-card p-6", ok ? "border-gold/20" : "border-destructive/30")}>
