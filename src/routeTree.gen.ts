@@ -16,6 +16,7 @@ import { Route as FaqRouteImport } from './routes/faq'
 import { Route as PortfolioRouteImport } from './routes/portfolio'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as ProcessRouteImport } from './routes/process'
+import { Route as SeoCheckerRouteImport } from './routes/seo-checker'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as SitemapBlogDotxmlRouteImport } from './routes/sitemap-blog[.]xml'
 import { Route as SitemapPagesDotxmlRouteImport } from './routes/sitemap-pages[.]xml'
@@ -57,6 +58,11 @@ const PrivacyRoute = PrivacyRouteImport.update({
 const ProcessRoute = ProcessRouteImport.update({
   id: '/process',
   path: '/process',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SeoCheckerRoute = SeoCheckerRouteImport.update({
+  id: '/seo-checker',
+  path: '/seo-checker',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServicesRoute = ServicesRouteImport.update({
@@ -103,6 +109,7 @@ export interface FileRoutesByFullPath {
   '/portfolio': typeof PortfolioRoute
   '/privacy': typeof PrivacyRoute
   '/process': typeof ProcessRoute
+  '/seo-checker': typeof SeoCheckerRoute
   '/services': typeof ServicesRoute
   '/sitemap-blog.xml': typeof SitemapBlogDotxmlRoute
   '/sitemap-pages.xml': typeof SitemapPagesDotxmlRoute
@@ -119,6 +126,7 @@ export interface FileRoutesByTo {
   '/portfolio': typeof PortfolioRoute
   '/privacy': typeof PrivacyRoute
   '/process': typeof ProcessRoute
+  '/seo-checker': typeof SeoCheckerRoute
   '/services': typeof ServicesRoute
   '/sitemap-blog.xml': typeof SitemapBlogDotxmlRoute
   '/sitemap-pages.xml': typeof SitemapPagesDotxmlRoute
@@ -136,6 +144,7 @@ export interface FileRoutesById {
   '/portfolio': typeof PortfolioRoute
   '/privacy': typeof PrivacyRoute
   '/process': typeof ProcessRoute
+  '/seo-checker': typeof SeoCheckerRoute
   '/services': typeof ServicesRoute
   '/sitemap-blog.xml': typeof SitemapBlogDotxmlRoute
   '/sitemap-pages.xml': typeof SitemapPagesDotxmlRoute
@@ -154,6 +163,7 @@ export interface FileRouteTypes {
     | '/portfolio'
     | '/privacy'
     | '/process'
+    | '/seo-checker'
     | '/services'
     | '/sitemap-blog.xml'
     | '/sitemap-pages.xml'
@@ -170,6 +180,7 @@ export interface FileRouteTypes {
     | '/portfolio'
     | '/privacy'
     | '/process'
+    | '/seo-checker'
     | '/services'
     | '/sitemap-blog.xml'
     | '/sitemap-pages.xml'
@@ -186,6 +197,7 @@ export interface FileRouteTypes {
     | '/portfolio'
     | '/privacy'
     | '/process'
+    | '/seo-checker'
     | '/services'
     | '/sitemap-blog.xml'
     | '/sitemap-pages.xml'
@@ -203,6 +215,7 @@ export interface RootRouteChildren {
   PortfolioRoute: typeof PortfolioRoute
   PrivacyRoute: typeof PrivacyRoute
   ProcessRoute: typeof ProcessRoute
+  SeoCheckerRoute: typeof SeoCheckerRoute
   ServicesRoute: typeof ServicesRoute
   SitemapBlogDotxmlRoute: typeof SitemapBlogDotxmlRoute
   SitemapPagesDotxmlRoute: typeof SitemapPagesDotxmlRoute
@@ -261,6 +274,13 @@ declare module '@tanstack/react-router' {
       path: '/process'
       fullPath: '/process'
       preLoaderRoute: typeof ProcessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/seo-checker': {
+      id: '/seo-checker'
+      path: '/seo-checker'
+      fullPath: '/seo-checker'
+      preLoaderRoute: typeof SeoCheckerRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/services': {
@@ -323,6 +343,7 @@ const rootRouteChildren: RootRouteChildren = {
   PortfolioRoute: PortfolioRoute,
   PrivacyRoute: PrivacyRoute,
   ProcessRoute: ProcessRoute,
+  SeoCheckerRoute: SeoCheckerRoute,
   ServicesRoute: ServicesRoute,
   SitemapBlogDotxmlRoute: SitemapBlogDotxmlRoute,
   SitemapPagesDotxmlRoute: SitemapPagesDotxmlRoute,
