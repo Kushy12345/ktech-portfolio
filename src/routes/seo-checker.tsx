@@ -197,7 +197,7 @@ function UrlListCard({
   expected: string[];
   missing: string[];
   extra: string[];
-  error?: string;
+  error?: string | undefined;
 }) {
   return (
     <article className={cn("premium-card p-6", ok ? "border-gold/20" : "border-destructive/30")}>
