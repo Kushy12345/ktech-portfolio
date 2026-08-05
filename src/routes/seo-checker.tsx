@@ -14,6 +14,8 @@ export const Route = createFileRoute("/seo-checker")({
       { name: "description", content: "Internal diagnostic page that verifies sitemaps and robots.txt are reachable and complete." },
       { property: "og:title", content: "SEO Health Check | K-Tech Solutions" },
       { property: "og:description", content: "Internal diagnostic page that verifies sitemaps and robots.txt are reachable and complete." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { name: "robots", content: "noindex" },
     ],
     links: [{ rel: "canonical", href: "/seo-checker" }],
