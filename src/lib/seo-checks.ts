@@ -4,7 +4,7 @@ export interface FileCheck {
   path: string;
   status: number;
   ok: boolean;
-  error?: string;
+  error?: string | undefined;
 }
 
 export interface SeoCheckResult {
@@ -56,15 +56,18 @@ export const EXPECTED_BLOG_PATHS = posts.map((post) => `/blog/${post.slug}`);
 export const EXPECTED_CHILD_SITEMAPS = ["/sitemap-pages.xml", "/sitemap-blog.xml"];
 
 function extractLocs(xml: string): string[] {
-  return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1].trim());
+  return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)]
+    .map((match) => match[1]?.trim())
+    .filter((value): value is string => typeof value === "string" && value.length > 0);
 }
 
-async function fetchCheck(baseUrl: string, path: string): Promise<{ status: number; ok: boolean; text: string; error?: string }> {
+async function fetchCheck(baseUrl: string, path: string): Promise<FileCheck & { text: string }> {
   try {
     const url = new URL(path, baseUrl).toString();
     const response = await fetch(url, { redirect: "follow" });
     const text = await response.text();
     return {
+      path,
       status: response.status,
       ok: response.status === 200 && text.trim().length > 0,
       text,
@@ -72,6 +75,7 @@ async function fetchCheck(baseUrl: string, path: string): Promise<{ status: numb
     };
   } catch (err) {
     return {
+      path,
       status: 0,
       ok: false,
       text: "",
