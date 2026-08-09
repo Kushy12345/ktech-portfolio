@@ -213,7 +213,7 @@ function Contact() {
 
             <Button asChild variant="gold" className="mt-5 w-full">
               <a
-                href="https://k-tech-client-portal.vercel.app/intake/general-digital-discovery"
+                href="https://k-tech-client-portal.vercel.app/"
                 target="_blank"
                 rel="noreferrer noopener"
               >
