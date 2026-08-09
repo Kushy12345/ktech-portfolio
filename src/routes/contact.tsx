@@ -174,7 +174,6 @@ function Contact() {
                 </div>
               </div>
             </Reveal>
-
             <Reveal delay={100}>
               <div id="consultation" className="premium-card scroll-mt-24 p-7">
                 <CalendarClock className="h-6 w-6 text-gold" aria-hidden="true" />
@@ -194,7 +193,40 @@ function Contact() {
                 </p>
               </div>
             </Reveal>
+        <Reveal delay={140}>
+          <div className="premium-card p-7">
+            <div className="flex items-center gap-3">
+              <div className="grid h-10 w-10 place-items-center rounded-xl bg-gold/10 text-gold">
+                <Send className="h-5 w-5" aria-hidden="true" />
+              </div>
+              <div>
+                <h2 className="text-lg font-semibold">Ready to start your project?</h2>
+                <p className="text-xs text-muted-foreground">Tell us what you need</p>
+              </div>
+            </div>
 
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              Submit your project details through our client portal. You’ll be guided through
+              a short discovery process that helps us understand your goals, requirements,
+              budget and timeline.
+            </p>
+
+            <Button asChild variant="gold" className="mt-5 w-full">
+              <a
+                href="https://k-tech-client-portal.vercel.app/intake/general-digital-discovery"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Start Your Project
+                <Send className="ml-2 h-4 w-4" aria-hidden="true" />
+              </a>
+            </Button>
+
+            <p className="mt-3 text-center text-xs text-muted-foreground">
+              No obligation. Just tell us what you have in mind.
+            </p>
+          </div>
+        </Reveal>
             <Reveal delay={160}>
               <div className="premium-card overflow-hidden">
                 <div
@@ -211,8 +243,7 @@ function Contact() {
                 </div>
               </div>
             </Reveal>
-          </div>
-
+        </div>
           <Reveal delay={120}>
             <form
               id="estimator"
@@ -224,7 +255,6 @@ function Contact() {
               <p className="mt-2 text-sm text-muted-foreground">
                 Fields marked with * are required. Everything else just helps me reply usefully.
               </p>
-
               <div className="mt-8 grid gap-5 sm:grid-cols-2">
                 <div>
                   <Label htmlFor="name">Your name *</Label>
