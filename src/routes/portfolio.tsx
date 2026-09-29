@@ -6,17 +6,17 @@ import { CtaBand, PageHero, Section } from "@/components/site/ui-bits";
 import { projects, site } from "@/data/site";
 
 const description =
-  "Real projects built by Tarfa Elijah Kwembe — the K-Tech website, a training inquiry desk, landing pages and practice business websites, with the problem, tech and lessons for each.";
+  "Real projects built by Tarfa Elijah Kwembe — RISE Hub, the K-Tech Client Portal, the K-Tech website and earlier practice builds, with the problem, tech and lessons for each.";
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
     meta: [
-      { title: "Portfolio | Projects by K-Tech Solutions" },
+      { title: "Portfolio | Projects by K-Tech Technologies" },
       { name: "description", content: description },
-      { property: "og:title", content: "Portfolio | K-Tech Solutions" },
+      { property: "og:title", content: "Portfolio | K-Tech Technologies" },
       { property: "og:description", content: description },
       { property: "og:url", content: "/portfolio" },
-      { name: "twitter:title", content: "Portfolio | K-Tech Solutions" },
+      { name: "twitter:title", content: "Portfolio | K-Tech Technologies" },
       { name: "twitter:description", content: description },
     ],
     links: [{ rel: "canonical", href: "/portfolio" }],
@@ -34,7 +34,7 @@ function Portfolio() {
             Fewer projects, <span className="text-gradient-mix">fully explained</span>
           </>
         }
-        intro="I'd rather show you four real builds with honest case notes than twenty screenshots with no story. Each project below includes the problem it solved, the tech behind it, what was hard and what I learned."
+        intro="I'd rather show you the projects that best represent where my work is today than twenty screenshots with no story. Each project below includes the problem it solved, the tech behind it, what was hard and what I learned."
       >
         <Button asChild variant="gold" size="lg">
           <a href={site.socials.github} target="_blank" rel="noreferrer noopener">
@@ -67,12 +67,14 @@ function Portfolio() {
                       ))}
                     </ul>
                     <div className="mt-7 flex flex-wrap gap-3">
-                      <Button asChild variant="glass" size="sm">
-                        <a href={project.github} target="_blank" rel="noreferrer noopener">
-                          <Github aria-hidden="true" />
-                          View on GitHub
-                        </a>
-                      </Button>
+                      {project.github ? (
+                        <Button asChild variant="glass" size="sm">
+                          <a href={project.github} target="_blank" rel="noreferrer noopener">
+                            <Github aria-hidden="true" />
+                            View on GitHub
+                          </a>
+                        </Button>
+                      ) : null}
                       {project.demo ? (
                         <Button asChild variant="gold" size="sm">
                           <a href={project.demo}>
