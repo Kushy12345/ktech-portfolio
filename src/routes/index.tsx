@@ -33,17 +33,17 @@ import {
 } from "@/data/site";
 
 const description =
-  "K-Tech Solutions helps businesses build a strong digital presence with clean, responsive websites, web apps and practical digital support. Based in Jos, Nigeria.";
+  "K-Tech Technologies helps businesses build a strong digital presence with clean, responsive websites, web apps and practical digital support. Based in Jos, Nigeria.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "K-Tech Solutions | Websites That Grow Small Businesses" },
+      { title: "K-Tech Technologies | Websites That Grow Small Businesses" },
       { name: "description", content: description },
-      { property: "og:title", content: "K-Tech Solutions | Websites That Grow Small Businesses" },
+      { property: "og:title", content: "K-Tech Technologies | Websites That Grow Small Businesses" },
       { property: "og:description", content: description },
       { property: "og:url", content: "/" },
-      { name: "twitter:title", content: "K-Tech Solutions | Websites That Grow Small Businesses" },
+      { name: "twitter:title", content: "K-Tech Technologies | Websites That Grow Small Businesses" },
       { name: "twitter:description", content: description },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -52,10 +52,10 @@ export const Route = createFileRoute("/")({
 });
 
 const learning = [
-  "Full stack development with Node.js and Express",
-  "Databases: MongoDB and SQL fundamentals",
-  "Next.js app structure and rendering",
-  "Advanced Power BI reporting for small business",
+  "Full-stack development with Next.js and TypeScript",
+  "Supabase database design and security",
+  "Solana and Web3 product integration",
+  "Secure reward and utility workflows",
 ];
 
 function Home() {
@@ -78,7 +78,7 @@ function Home() {
               </Reveal>
               <Reveal delay={160}>
                 <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-                  I&apos;m {site.founder} — the developer behind K-Tech Solutions. I build clean,
+                  I&apos;m {site.founder} — the developer behind K-Tech Technologies. I build clean,
                   responsive websites and digital solutions that make small businesses easy to find,
                   easy to trust and easy to contact.
                 </p>
@@ -131,7 +131,7 @@ function Home() {
                     <LogoMark className="mx-auto h-16 w-16" />
                     <p className="mt-5 font-display text-lg font-semibold">{site.founder}</p>
                     <p className="mt-1 text-xs uppercase tracking-[0.2em] text-gold">
-                      Founder, K-Tech Solutions
+                      Founder, K-Tech Technologies
                     </p>
                     <p className="mt-5 text-xs text-muted-foreground">
                       Professional portrait coming soon
@@ -158,8 +158,8 @@ function Home() {
       <Section className="pt-4" ariaLabel="At a glance">
         <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
           <AnimatedStat value={3} label="Professional training programmes completed" />
-          <AnimatedStat value={4} suffix="+" label="Portfolio projects built and documented" />
-          <AnimatedStat value={20} suffix="+" label="Services across web, data and media" />
+          <AnimatedStat value={6} suffix="+" label="Projects built and documented" />
+          <AnimatedStat value={4} label="Core service areas" />
           <AnimatedStat value={100} suffix="%" label="Of my attention on your project" />
         </div>
       </Section>
