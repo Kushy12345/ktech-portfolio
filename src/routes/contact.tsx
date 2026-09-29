@@ -40,7 +40,6 @@ const projectTypes = [
   "WordPress site",
   "SEO / digital marketing",
   "Dashboard / reporting",
-  "Drone photography",
   "Something else",
 ];
 const budgets = ["Under ₦100k", "₦100k – ₦250k", "₦250k – ₦500k", "₦500k+", "Not sure yet"];
