@@ -4,17 +4,17 @@ import { Reveal } from "@/components/site/Reveal";
 import { site } from "@/data/site";
 
 const description =
-  "How K-Tech Solutions handles the information you send through this website — what is collected, how it is used, and how to contact us about your data.";
+  "How K-Tech Technologies handles the information you send through this website — what is collected, how it is used, and how to contact us about your data.";
 
 export const Route = createFileRoute("/privacy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy | K-Tech Solutions" },
+      { title: "Privacy Policy | K-Tech Technologies" },
       { name: "description", content: description },
-      { property: "og:title", content: "Privacy Policy | K-Tech Solutions" },
+      { property: "og:title", content: "Privacy Policy | K-Tech Technologies" },
       { property: "og:description", content: description },
       { property: "og:url", content: "/privacy" },
-      { name: "twitter:title", content: "Privacy Policy | K-Tech Solutions" },
+      { name: "twitter:title", content: "Privacy Policy | K-Tech Technologies" },
       { name: "twitter:description", content: description },
     ],
     links: [{ rel: "canonical", href: "/privacy" }],
