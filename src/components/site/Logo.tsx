@@ -33,7 +33,7 @@ export function Wordmark({ className }: { className?: string }) {
         <span className="font-display text-[1.05rem] font-bold tracking-tight text-foreground">
           K&#8209;TECH
         </span>
-        <span className="text-[0.6rem] font-semibold tracking-[0.28em] text-gold">SOLUTIONS</span>
+        <span className="text-[0.6rem] font-semibold tracking-[0.28em] text-gold">TECHNOLOGIES</span>
       </span>
     </span>
   );
