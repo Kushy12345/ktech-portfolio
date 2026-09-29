@@ -138,10 +138,6 @@ function Skills() {
               body: "On-page SEO, social media management and content design — so your new site gets seen, not just built.",
             },
             {
-              title: "Drone photography",
-              body: "Aerial visuals for property, events and venues, which give marketing material an immediate lift.",
-            },
-            {
               title: "Design sense",
               body: "Figma and Canva work grounded in layout, hierarchy and contrast rather than decoration for its own sake.",
             },
