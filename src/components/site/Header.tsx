@@ -29,7 +29,7 @@ export function Header() {
       )}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-5 sm:px-8">
-        <Link to="/" aria-label="K-Tech Solutions home" className="shrink-0">
+        <Link to="/" aria-label="K-Tech Technologies home" className="shrink-0">
           <Wordmark />
         </Link>
 
