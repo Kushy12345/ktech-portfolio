@@ -10,17 +10,17 @@ import { CtaBand, PageHero, Section } from "@/components/site/ui-bits";
 import { faqs } from "@/data/site";
 
 const description =
-  "Answers to common questions about website cost, project timelines, redesigns, post-launch support, mobile-friendly builds and digital marketing at K-Tech Solutions.";
+  "Answers to common questions about website cost, project timelines, redesigns, post-launch support, mobile-friendly builds and digital marketing at K-Tech Technologies.";
 
 export const Route = createFileRoute("/faq")({
   head: () => ({
     meta: [
-      { title: "FAQs | Costs, Timelines & Support — K-Tech Solutions" },
+      { title: "FAQs | Costs, Timelines & Support — K-Tech Technologies" },
       { name: "description", content: description },
-      { property: "og:title", content: "FAQs | K-Tech Solutions" },
+      { property: "og:title", content: "FAQs | K-Tech Technologies" },
       { property: "og:description", content: description },
       { property: "og:url", content: "/faq" },
-      { name: "twitter:title", content: "FAQs | K-Tech Solutions" },
+      { name: "twitter:title", content: "FAQs | K-Tech Technologies" },
       { name: "twitter:description", content: description },
     ],
     links: [{ rel: "canonical", href: "/faq" }],

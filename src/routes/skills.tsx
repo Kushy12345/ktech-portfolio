@@ -15,12 +15,12 @@ const description =
 export const Route = createFileRoute("/skills")({
   head: () => ({
     meta: [
-      { title: "Skills & Tools | K-Tech Solutions" },
+      { title: "Skills & Tools | K-Tech Technologies" },
       { name: "description", content: description },
-      { property: "og:title", content: "Skills & Tools | K-Tech Solutions" },
+      { property: "og:title", content: "Skills & Tools | K-Tech Technologies" },
       { property: "og:description", content: description },
       { property: "og:url", content: "/skills" },
-      { name: "twitter:title", content: "Skills & Tools | K-Tech Solutions" },
+      { name: "twitter:title", content: "Skills & Tools | K-Tech Technologies" },
       { name: "twitter:description", content: description },
     ],
     links: [{ rel: "canonical", href: "/skills" }],
@@ -136,10 +136,6 @@ function Skills() {
             {
               title: "Digital marketing",
               body: "On-page SEO, social media management and content design — so your new site gets seen, not just built.",
-            },
-            {
-              title: "Drone photography",
-              body: "Aerial visuals for property, events and venues, which give marketing material an immediate lift.",
             },
             {
               title: "Design sense",

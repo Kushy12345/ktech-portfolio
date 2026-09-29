@@ -92,11 +92,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "K-Tech Solutions | Websites That Grow Small Businesses" },
+      { title: "K-Tech Technologies | Websites That Grow Small Businesses" },
       {
         name: "description",
         content:
-          "K-Tech Solutions builds clean, responsive websites and digital solutions for small businesses. Founded by Tarfa Elijah Kwembe in Jos, Nigeria.",
+          "K-Tech Technologies builds clean, responsive websites and digital solutions for small businesses. Founded by Tarfa Elijah Kwembe in Jos, Nigeria.",
       },
       { name: "author", content: site.founder },
       { name: "theme-color", content: "#151517" },
@@ -106,10 +106,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@DrSLIM5" },
       { name: "twitter:creator", content: "@DrSLIM5" },
-      { property: "og:title", content: "K-Tech Solutions | Websites That Grow Small Businesses" },
-      { name: "twitter:title", content: "K-Tech Solutions | Websites That Grow Small Businesses" },
-      { property: "og:description", content: "K-Tech Solutions builds clean, responsive websites and digital solutions for small businesses. Founded by Tarfa Elijah Kwembe in Jos, Nigeria." },
-      { name: "twitter:description", content: "K-Tech Solutions builds clean, responsive websites and digital solutions for small businesses. Founded by Tarfa Elijah Kwembe in Jos, Nigeria." },
+      { property: "og:title", content: "K-Tech Technologies | Websites That Grow Small Businesses" },
+      { name: "twitter:title", content: "K-Tech Technologies | Websites That Grow Small Businesses" },
+      { property: "og:description", content: "K-Tech Technologies builds clean, responsive websites and digital solutions for small businesses. Founded by Tarfa Elijah Kwembe in Jos, Nigeria." },
+      { name: "twitter:description", content: "K-Tech Technologies builds clean, responsive websites and digital solutions for small businesses. Founded by Tarfa Elijah Kwembe in Jos, Nigeria." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/09d6e353-29ce-477f-98ac-870d134b45c9/id-preview-9c7f484e--a8c78708-ff82-49cb-a89f-1b00239999ba.lovable.app-1785912450001.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/09d6e353-29ce-477f-98ac-870d134b45c9/id-preview-9c7f484e--a8c78708-ff82-49cb-a89f-1b00239999ba.lovable.app-1785912450001.png" },
     ],

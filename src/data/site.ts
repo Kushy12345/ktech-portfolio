@@ -1,5 +1,5 @@
 export const site = {
-  name: "K-Tech Solutions",
+  name: "K-Tech Technologies",
   founder: "Tarfa Elijah KWEMBE",
   tagline: "Helping Businesses Build a Strong Digital Presence",
   phone: "+2348163387101",
@@ -103,18 +103,17 @@ export const serviceGroups: ServiceGroup[] = [
     id: "data",
     title: "Data, Visuals & Technical Support",
     blurb:
-      "Practical technology help — reporting you can act on, aerial visuals for promotion, and someone to call when things break.",
+      "Practical technology help — reporting you can act on, technical support when things break, and straightforward advice on the tools your business needs.",
     items: [
       "Excel dashboards",
       "Power BI dashboards",
-      "Drone photography",
       "Technical support",
       "IT consulting",
       "Business technology advice",
     ],
     benefits: [
       "Reports that answer real business questions",
-      "Aerial photography for property, events and promotion",
+      "Practical technical support when something breaks or needs improving",
       "Straight advice on tools before you spend money",
     ],
     idealFor: "Useful for small teams without an in-house technical person.",
@@ -131,7 +130,7 @@ export const skillGroups: { title: string; skills: { name: string; level: SkillL
       { name: "HTML5", level: "Confident" },
       { name: "CSS3", level: "Confident" },
       { name: "JavaScript", level: "Comfortable" },
-      { name: "TypeScript", level: "Growing experience" },
+      { name: "TypeScript", level: "Comfortable" },
     ],
   },
   {
@@ -140,7 +139,7 @@ export const skillGroups: { title: string; skills: { name: string; level: SkillL
       { name: "React", level: "Comfortable" },
       { name: "Tailwind CSS", level: "Confident" },
       { name: "Bootstrap", level: "Comfortable" },
-      { name: "Next.js", level: "Growing experience" },
+      { name: "Next.js", level: "Comfortable" },
     ],
   },
   {
@@ -163,8 +162,7 @@ export const skillGroups: { title: string; skills: { name: string; level: SkillL
       { name: "Power BI", level: "Growing experience" },
       { name: "Excel", level: "Confident" },
       { name: "Digital marketing", level: "Comfortable" },
-      { name: "Drone photography", level: "Comfortable" },
-    ],
+          ],
   },
 ];
 
@@ -205,71 +203,102 @@ export type Project = {
   tech: string[];
   challenge: string;
   learned: string;
-  github: string;
+  github?: string;
   demo?: string;
 };
 
 export const projects: Project[] = [
   {
-    slug: "k-tech-website",
-    title: "K-Tech Solutions Website",
-    kind: "Personal brand site",
+    slug: "rise-hub",
+    title: "RISE Hub",
+    kind: "Full-stack Web3 platform",
     overview:
-      "The site you are reading now — my own brand, portfolio and enquiry funnel, designed and built end to end.",
+      "A full-stack community platform I am building around the RISE vision, connecting learning, contribution, rewards, wallet flows, utility access and Solana/RSE integration.",
     problem:
-      "I needed one honest place to show what I can do, so potential clients could judge my work instead of taking my word for it.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+      "I wanted to build more than a token landing page. RISE Hub needs real product infrastructure that can connect learning, contribution, earning and utility in one place.",
+    tech: ["Next.js", "TypeScript", "Supabase", "Solana", "Tailwind CSS"],
     challenge:
-      "Making a dark, gold-accented design stay readable and accessible, while keeping animation subtle enough not to hurt performance.",
+      "Designing reward, wallet and utility flows with strong database safeguards while keeping a complex Web3 product understandable to ordinary users.",
     learned:
-      "Design systems pay off. Once colours, spacing and card styles lived in one place, building new pages took minutes instead of hours.",
-    github: site.socials.github,
-    demo: "/",
+      "Real products need more than screens. Authentication, database integrity, authorization, transaction safety and clear user flows all have to work together.",
+    demo: "https://rise-hub-six.vercel.app",
+  },
+  {
+    slug: "k-tech-client-portal",
+    title: "K-Tech Client Portal",
+    kind: "Client intake web application",
+    overview:
+      "A dedicated project intake portal that helps prospective clients explain their business, requirements, budget and timeline before a project starts.",
+    problem:
+      "Client enquiries can become scattered across chats and calls. I wanted a structured way to collect the information needed to understand a project properly.",
+    tech: ["Next.js", "TypeScript", "React", "Forms", "Vercel"],
+    challenge:
+      "Turning a normal enquiry form into a guided experience that collects useful project information without making the first step feel like paperwork.",
+    learned:
+      "Good client systems are product design problems too. The right questions, sequence and validation can save time for both the client and developer.",
+    github: "https://github.com/Kushy12345/k-tech-client-portal",
+    demo: "https://k-tech-client-portal.vercel.app",
+  },
+  {
+    slug: "k-tech-website",
+    title: "K-Tech Technologies Website",
+    kind: "Brand and portfolio platform",
+    overview:
+      "My own technology brand website, portfolio and enquiry funnel, designed and built end to end as a real product rather than a template exercise.",
+    problem:
+      "I needed one honest place to present my skills, services and work while giving potential clients a clear way to start a project.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Vite", "TanStack Router"],
+    challenge:
+      "Building a premium visual system that still feels honest and approachable, with strong responsive behaviour and accessible interactions across a large multi-page site.",
+    learned:
+      "A portfolio is itself a product. Information architecture, copy, performance, accessibility and visual consistency matter just as much as the code behind the pages.",
+    github: "https://github.com/Kushy12345/ktech-portfolio",
+    demo: "https://myportfolio-nine-livid-66.vercel.app",
   },
   {
     slug: "training-inquiry-desk",
     title: "Training Inquiry Desk",
-    kind: "Enquiry & intake tool",
+    kind: "Enquiry and intake tool",
     overview:
-      "A simple intake page for capturing training enquiries — structured fields instead of scattered WhatsApp messages.",
+      "An early intake project built to turn informal training enquiries into structured submissions with clear fields and validation.",
     problem:
-      "Enquiries arrived in several places with details missing, so following up meant asking the same questions twice.",
+      "Enquiries arrived in several places with important details missing, making follow-up slower and repetitive.",
     tech: ["HTML", "CSS", "JavaScript", "Forms & validation"],
     challenge:
-      "Keeping the form short enough that people finish it, while still collecting everything needed to reply usefully.",
+      "Keeping the form short enough that people finish it while still collecting enough information to respond usefully.",
     learned:
-      "Validation and clear error messages are part of the design, not an afterthought. Good forms are mostly good copywriting.",
-    github: site.socials.github,
+      "Validation and clear error messages are part of the user experience, not an afterthought.",
+    github: "https://github.com/Kushy12345",
   },
   {
     slug: "landing-pages",
     title: "Landing Page Collection",
     kind: "Practice landing pages",
     overview:
-      "A set of single-purpose landing pages built to practise conversion layout: one message, one action, no clutter.",
+      "A collection of focused landing pages built to practise conversion-oriented layout, clear messaging and single-action page structure.",
     problem:
-      "Small businesses often send ad traffic to a homepage that asks visitors to do ten things at once.",
+      "Many small business homepages ask visitors to do too many things at once. These builds helped me practise designing around one clear goal.",
     tech: ["HTML", "CSS", "Tailwind CSS", "JavaScript"],
     challenge:
-      "Resisting the urge to add sections. Every block had to justify itself against the single goal of the page.",
+      "Resisting unnecessary sections and making every part of the page justify its place.",
     learned:
-      "Hierarchy beats decoration. Strong headline, honest proof, one button — that structure works across industries.",
-    github: site.socials.github,
+      "Hierarchy beats decoration. Strong messaging, useful proof and a clear action make a page easier to understand.",
+    github: "https://github.com/Kushy12345",
   },
   {
     slug: "practice-business-websites",
     title: "Practice Business Websites",
     kind: "Self-directed practice builds",
     overview:
-      "Multi-page business sites I built for practice, covering services, about, gallery and contact patterns from scratch.",
+      "Multi-page business websites built to rehearse realistic service, about, gallery and contact experiences before applying those patterns to real projects.",
     problem:
-      "I wanted to rehearse real client scenarios — content that keeps changing, and pages that must stay consistent.",
+      "I wanted to practise building consistent multi-page experiences instead of only isolated landing pages.",
     tech: ["React", "Tailwind CSS", "WordPress", "Responsive layout"],
     challenge:
-      "Building reusable components and content structures instead of copy-pasting markup between pages.",
+      "Creating reusable components and content structures instead of repeating markup between pages.",
     learned:
-      "Planning content before layout saves rework, and reusable components make late changes cheap.",
-    github: site.socials.github,
+      "Planning content before layout saves rework, and reusable components make later changes much cheaper.",
+    github: "https://github.com/Kushy12345",
   },
 ];
 
@@ -282,32 +311,32 @@ export const journey = [
   {
     period: "Training",
     title: "Completed professional training",
-    body: "Formal training in web development, digital marketing and drone photography gave structure to what I had been teaching myself.",
+    body: "Formal training gave structure to what I had been teaching myself and pushed me toward building practical projects instead of only studying theory.",
   },
   {
     period: "First builds",
-    title: "Built my first responsive website",
-    body: "The first site that held together on a phone, a tablet and a laptop. That is where responsive design stopped being theory.",
+    title: "Built responsive websites and landing pages",
+    body: "Early practice projects taught me how layouts, forms, navigation and mobile behaviour come together in a real website.",
   },
   {
-    period: "Portfolio",
-    title: "Created portfolio projects",
-    body: "Landing pages, an enquiry desk and practice business sites — each one built to answer a real question, not to fill a grid.",
-  },
-  {
-    period: "Now",
-    title: "Learning full stack development",
-    body: "Node.js, Express and databases, so I can build features that store and serve data rather than only front-end screens.",
+    period: "Client systems",
+    title: "Built the K-Tech Client Portal",
+    body: "I moved from brochure-style pages into a real intake application designed to collect structured information from prospective clients.",
   },
   {
     period: "Now",
-    title: "Working with real clients",
-    body: "Taking on small business projects, handling scope and feedback properly, and shipping work I am happy to put my name on.",
+    title: "Building RISE Hub",
+    body: "RISE Hub has pushed me deeper into full-stack development, Supabase, Solana integration, reward systems, authorization and production-minded database design.",
+  },
+  {
+    period: "Now",
+    title: "Growing K-Tech Technologies",
+    body: "The business is evolving from a personal web-development brand into a broader technology studio focused on practical digital products and business systems.",
   },
   {
     period: "Next",
-    title: "Growing K-Tech Solutions",
-    body: "Building a dependable studio for small businesses in Jos and beyond — one well-finished project at a time.",
+    title: "Turn more builds into real client solutions",
+    body: "The goal is simple: keep shipping useful software, deepen my engineering skills and build a track record of work that speaks for itself.",
   },
 ];
 
@@ -421,7 +450,7 @@ export const posts: Post[] = [
       "The first few weeks were HTML and CSS, and everything I built looked slightly broken. Then something clicked — I stopped copying tutorials line by line and started rebuilding pages I admired, guessing at the structure first and checking myself afterwards.",
       "Formal training gave that habit a backbone. Web development, digital marketing and drone photography, all in a period where I was already building small things for practice. Training answered the questions I did not know to ask.",
       "What I have learned is that consistency beats intensity. A focused hour every day teaches you more than a frantic weekend. And shipping something imperfect teaches you more than planning something perfect.",
-      "K-Tech Solutions grew out of that. Not an agency, not a team of twenty — one developer who cares about finishing things properly and is honest about where he is on the road.",
+      "K-Tech Technologies grew out of that. Not an agency, not a team of twenty — one developer who cares about finishing things properly and is honest about where he is on the road.",
     ],
   },
   {
@@ -549,7 +578,7 @@ export const faqs = [
   },
   {
     q: "What is your experience level?",
-    a: "I completed professional training in web development, digital marketing and drone photography, and I am actively building projects and working with small businesses. I am early in my professional journey and open about it — what I offer is careful work, clear communication and full attention on your project.",
+    a: "I completed professional training in web development and digital marketing, and I am actively building projects and working with small businesses. I am early in my professional journey and open about it — what I offer is careful work, clear communication and full attention on your project.",
   },
   {
     q: "How do we get started?",

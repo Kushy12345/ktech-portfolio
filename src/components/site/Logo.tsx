@@ -6,7 +6,7 @@ export function LogoMark({ className }: { className?: string }) {
     <svg
       viewBox="0 0 48 48"
       role="img"
-      aria-label="K-Tech Solutions mark"
+      aria-label="K-Tech Technologies mark"
       className={cn("h-9 w-9", className)}
     >
       <defs>

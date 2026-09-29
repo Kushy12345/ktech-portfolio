@@ -5,17 +5,17 @@ import { CtaBand, PageHero, Section } from "@/components/site/ui-bits";
 import { posts } from "@/data/site";
 
 const description =
-  "Plain-language articles on web development, responsive design, digital marketing basics, Power BI for small business and drone photography — by Tarfa Elijah Kwembe.";
+  "Plain-language articles on web development, responsive design, digital marketing basics, Power BI for small business — by Tarfa Elijah Kwembe.";
 
 export const Route = createFileRoute("/blog/")({
   head: () => ({
     meta: [
-      { title: "Blog | Notes on Web, Marketing & Data — K-Tech Solutions" },
+      { title: "Blog | Notes on Web, Marketing & Data — K-Tech Technologies" },
       { name: "description", content: description },
-      { property: "og:title", content: "Blog | K-Tech Solutions" },
+      { property: "og:title", content: "Blog | K-Tech Technologies" },
       { property: "og:description", content: description },
       { property: "og:url", content: "/blog" },
-      { name: "twitter:title", content: "Blog | K-Tech Solutions" },
+      { name: "twitter:title", content: "Blog | K-Tech Technologies" },
       { name: "twitter:description", content: description },
     ],
     links: [{ rel: "canonical", href: "/blog" }],

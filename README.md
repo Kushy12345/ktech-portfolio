@@ -2,7 +2,7 @@
 
 Act as a world-class UI/UX designer, Senior Frontend Engineer, Full Stack Developer, Product Designer, Brand Strategist, SEO Expert, Accessibility Specialist, and Professional Copywriter.
 
-Your task is to design and build a modern, premium-quality personal portfolio website for my technology brand, K-Tech Solutions.
+Your task is to design and build a modern, premium-quality personal portfolio website for my technology brand, K-Tech Technologies.
 
 The website should present me as an aspiring but capable web developer and digital solutions provider. I have recently completed professional training in Web Development, Digital Marketing, and Drone Photography, and I'm actively building real-world projects while helping businesses establish their online presence.
 
@@ -34,7 +34,7 @@ BRAND
 ================================================
 
 Brand Name:
-K-Tech Solutions
+K-Tech Technologies
 
 Current Website:
 https://k-tech-one.vercel.app/
@@ -513,7 +513,7 @@ Learning full stack development
 
 Working with real clients
 
-Growing K-Tech Solutions
+Growing K-Tech Technologies
 
 This section should communicate growth.
 

@@ -9,12 +9,12 @@ const description =
 export const Route = createFileRoute("/process")({
   head: () => ({
     meta: [
-      { title: "Development Process | K-Tech Solutions" },
+      { title: "Development Process | K-Tech Technologies" },
       { name: "description", content: description },
-      { property: "og:title", content: "Development Process | K-Tech Solutions" },
+      { property: "og:title", content: "Development Process | K-Tech Technologies" },
       { property: "og:description", content: description },
       { property: "og:url", content: "/process" },
-      { name: "twitter:title", content: "Development Process | K-Tech Solutions" },
+      { name: "twitter:title", content: "Development Process | K-Tech Technologies" },
       { name: "twitter:description", content: description },
     ],
     links: [{ rel: "canonical", href: "/process" }],

@@ -14,12 +14,12 @@ export const Route = createFileRoute("/blog/$slug")({
   },
   head: ({ params, loaderData }) => {
     if (!loaderData) {
-      return { meta: [{ title: "Article unavailable | K-Tech Solutions" }, { name: "robots", content: "noindex" }] };
+      return { meta: [{ title: "Article unavailable | K-Tech Technologies" }, { name: "robots", content: "noindex" }] };
     }
     const { post } = loaderData;
     return {
       meta: [
-        { title: `${post.title} | K-Tech Solutions` },
+        { title: `${post.title} | K-Tech Technologies` },
         { name: "description", content: post.excerpt },
         { property: "og:title", content: post.title },
         { property: "og:description", content: post.excerpt },
