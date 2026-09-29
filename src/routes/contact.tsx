@@ -14,17 +14,17 @@ import { PageHero, Section, SectionHeading } from "@/components/site/ui-bits";
 import { site } from "@/data/site";
 
 const description =
-  "Contact K-Tech Solutions in Jos, Plateau State. Call +234 816 338 7101, email kwembetarfaelijah@gmail.com, or send a project enquiry for a free consultation.";
+  "Contact K-Tech Technologies in Jos, Plateau State. Call +234 816 338 7101, email kwembetarfaelijah@gmail.com, or send a project enquiry for a free consultation.";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact | Free Consultation — K-Tech Solutions" },
+      { title: "Contact | Free Consultation — K-Tech Technologies" },
       { name: "description", content: description },
-      { property: "og:title", content: "Contact | K-Tech Solutions" },
+      { property: "og:title", content: "Contact | K-Tech Technologies" },
       { property: "og:description", content: description },
       { property: "og:url", content: "/contact" },
-      { name: "twitter:title", content: "Contact | K-Tech Solutions" },
+      { name: "twitter:title", content: "Contact | K-Tech Technologies" },
       { name: "twitter:description", content: description },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
