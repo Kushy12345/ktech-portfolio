@@ -107,14 +107,13 @@ export const serviceGroups: ServiceGroup[] = [
     items: [
       "Excel dashboards",
       "Power BI dashboards",
-      "Drone photography",
       "Technical support",
       "IT consulting",
       "Business technology advice",
     ],
     benefits: [
       "Reports that answer real business questions",
-      "Aerial photography for property, events and promotion",
+      "Practical technical support when something breaks or needs improving",
       "Straight advice on tools before you spend money",
     ],
     idealFor: "Useful for small teams without an in-house technical person.",
@@ -163,8 +162,7 @@ export const skillGroups: { title: string; skills: { name: string; level: SkillL
       { name: "Power BI", level: "Growing experience" },
       { name: "Excel", level: "Confident" },
       { name: "Digital marketing", level: "Comfortable" },
-      { name: "Drone photography", level: "Comfortable" },
-    ],
+          ],
   },
 ];
 
