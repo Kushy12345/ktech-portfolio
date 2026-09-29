@@ -92,10 +92,10 @@ function Home() {
                     </Link>
                   </Button>
                   <Button asChild variant="violet" size="lg">
-                    <Link to="/contact" hash="consultation">
-                      <Calendar aria-hidden="true" />
-                      Book a consultation
-                    </Link>
+                    <a href="https://k-tech-client-portal.vercel.app/" target="_blank" rel="noreferrer noopener">
+                      Start your project
+                      <ArrowUpRight aria-hidden="true" />
+                    </a>
                   </Button>
                   <Button asChild variant="glass" size="lg">
                     <Link to="/portfolio">View my work</Link>
