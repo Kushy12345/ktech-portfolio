@@ -103,7 +103,7 @@ export const serviceGroups: ServiceGroup[] = [
     id: "data",
     title: "Data, Visuals & Technical Support",
     blurb:
-      "Practical technology help — reporting you can act on, aerial visuals for promotion, and someone to call when things break.",
+      "Practical technology help — reporting you can act on, technical support when things break, and straightforward advice on the tools your business needs.",
     items: [
       "Excel dashboards",
       "Power BI dashboards",
@@ -130,7 +130,7 @@ export const skillGroups: { title: string; skills: { name: string; level: SkillL
       { name: "HTML5", level: "Confident" },
       { name: "CSS3", level: "Confident" },
       { name: "JavaScript", level: "Comfortable" },
-      { name: "TypeScript", level: "Growing experience" },
+      { name: "TypeScript", level: "Comfortable" },
     ],
   },
   {
@@ -139,7 +139,7 @@ export const skillGroups: { title: string; skills: { name: string; level: SkillL
       { name: "React", level: "Comfortable" },
       { name: "Tailwind CSS", level: "Confident" },
       { name: "Bootstrap", level: "Comfortable" },
-      { name: "Next.js", level: "Growing experience" },
+      { name: "Next.js", level: "Comfortable" },
     ],
   },
   {
