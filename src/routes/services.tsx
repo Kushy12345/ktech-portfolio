@@ -6,7 +6,7 @@ import { CtaBand, PageHero, Section, SectionHeading } from "@/components/site/ui
 import { serviceGroups } from "@/data/site";
 
 const description =
-  "Website design, responsive development, web applications, WordPress, basic SEO, digital marketing, Power BI dashboards, drone photography and IT support for small businesses.";
+  "Website design, responsive development, web applications, WordPress, basic SEO, digital marketing, Power BI dashboards and IT support for small businesses.";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
