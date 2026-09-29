@@ -3,7 +3,7 @@ import { site } from "@/data/site";
 /** Fixed WhatsApp contact action. */
 export function FloatingWhatsApp() {
   const href = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(
-    "Hi Tarfa, I found K-Tech Solutions online and I'd like to discuss a project.",
+    "Hi Tarfa, I found K-Tech Technologies online and I'd like to discuss a project.",
   )}`;
 
   return (
@@ -11,7 +11,7 @@ export function FloatingWhatsApp() {
       href={href}
       target="_blank"
       rel="noreferrer noopener"
-      aria-label="Chat with K-Tech Solutions on WhatsApp"
+      aria-label="Chat with K-Tech Technologies on WhatsApp"
       className="group fixed bottom-5 right-5 z-50 flex min-h-14 min-w-14 items-center gap-3 rounded-full border border-gold/30 bg-surface-2/90 px-4 py-3 shadow-[var(--shadow-gold)] backdrop-blur-xl transition-transform duration-300 hover:scale-[1.03]"
     >
       <svg viewBox="0 0 24 24" className="h-6 w-6 fill-gold" aria-hidden="true">
