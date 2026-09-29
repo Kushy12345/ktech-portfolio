@@ -48,7 +48,13 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Button asChild variant="gold" size="sm" className="hidden sm:inline-flex">
+          <Button asChild variant="glass" size="sm" className="hidden sm:inline-flex">
+            <a href="https://k-tech-client-portal.vercel.app/" target="_blank" rel="noreferrer noopener">
+              Client Portal
+            </a>
+          </Button>
+
+          <Button asChild variant="gold" size="sm" className="hidden md:inline-flex">
             <Link to="/contact">
               <MessageCircle aria-hidden="true" />
               <span>Let&apos;s talk</span>
@@ -85,10 +91,15 @@ export function Header() {
                   </Link>
                 ))}
               </nav>
-              <div className="mt-6 px-5">
+              <div className="mt-6 space-y-3 px-5">
                 <Button asChild variant="gold" className="w-full">
+                  <a href="https://k-tech-client-portal.vercel.app/" target="_blank" rel="noreferrer noopener">
+                    Client Portal
+                  </a>
+                </Button>
+                <Button asChild variant="glass" className="w-full">
                   <Link to="/contact" onClick={() => setOpen(false)}>
-                    Start a project
+                    Let&apos;s talk
                   </Link>
                 </Button>
               </div>
