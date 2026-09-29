@@ -221,7 +221,6 @@ export const projects: Project[] = [
       "Designing reward, wallet and utility flows with strong database safeguards while keeping a complex Web3 product understandable to ordinary users.",
     learned:
       "Real products need more than screens. Authentication, database integrity, authorization, transaction safety and clear user flows all have to work together.",
-    github: "https://github.com/Kushy12345/rise-hub",
     demo: "https://rise-hub-six.vercel.app",
   },
   {
@@ -579,7 +578,7 @@ export const faqs = [
   },
   {
     q: "What is your experience level?",
-    a: "I completed professional training in web development, digital marketing and drone photography, and I am actively building projects and working with small businesses. I am early in my professional journey and open about it — what I offer is careful work, clear communication and full attention on your project.",
+    a: "I completed professional training in web development and digital marketing, and I am actively building projects and working with small businesses. I am early in my professional journey and open about it — what I offer is careful work, clear communication and full attention on your project.",
   },
   {
     q: "How do we get started?",
