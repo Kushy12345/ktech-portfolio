@@ -5,17 +5,17 @@ import { CtaBand, PageHero, Section, SectionHeading } from "@/components/site/ui
 import { journey, site } from "@/data/site";
 
 const description =
-  "Meet Tarfa Elijah Kwembe, founder of K-Tech Solutions in Jos, Nigeria — a dedicated web developer with training in web development, digital marketing and drone photography.";
+  "Meet Tarfa Elijah Kwembe, founder of K-Tech Technologies in Jos, Nigeria — a dedicated web developer with training in web development, digital marketing and drone photography.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Tarfa Elijah Kwembe | K-Tech Solutions" },
+      { title: "About Tarfa Elijah Kwembe | K-Tech Technologies" },
       { name: "description", content: description },
-      { property: "og:title", content: "About Tarfa Elijah Kwembe | K-Tech Solutions" },
+      { property: "og:title", content: "About Tarfa Elijah Kwembe | K-Tech Technologies" },
       { property: "og:description", content: description },
       { property: "og:url", content: "/about" },
-      { name: "twitter:title", content: "About | K-Tech Solutions" },
+      { name: "twitter:title", content: "About | K-Tech Technologies" },
       { name: "twitter:description", content: description },
     ],
     links: [{ rel: "canonical", href: "/about" }],
@@ -66,7 +66,7 @@ function About() {
             <span className="text-gradient-mix">carefully</span>
           </>
         }
-        intro="K-Tech Solutions isn't an agency with a boardroom. It's one developer in Jos, Plateau State, who genuinely enjoys solving business problems with technology — and who takes the finish of a project personally."
+        intro="K-Tech Technologies isn't an agency with a boardroom. It's one developer in Jos, Plateau State, who genuinely enjoys solving business problems with technology — and who takes the finish of a project personally."
       />
 
       {/* Story */}
@@ -158,7 +158,7 @@ function About() {
               <Eye className="h-7 w-7 text-gold" aria-hidden="true" />
               <h2 className="mt-5 text-2xl font-bold">Vision</h2>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
-                To grow K-Tech Solutions into a dependable technology studio known across Plateau
+                To grow K-Tech Technologies into a dependable technology studio known across Plateau
                 State and beyond for careful work, clear communication and results businesses can
                 measure.
               </p>
