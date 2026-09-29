@@ -5,7 +5,7 @@ import { CtaBand, PageHero, Section, SectionHeading } from "@/components/site/ui
 import { journey, site } from "@/data/site";
 
 const description =
-  "Meet Tarfa Elijah Kwembe, founder of K-Tech Technologies in Jos, Nigeria — a dedicated web developer with training in web development, digital marketing and drone photography.";
+  "Meet Tarfa Elijah Kwembe, founder of K-Tech Technologies in Jos, Nigeria — a dedicated web developer with training in web development and digital marketing.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -51,7 +51,6 @@ const strengths = [
   "IT support experience, from troubleshooting to setup and configuration",
   "Working knowledge of data analysis with Excel and Power BI",
   "Digital marketing fundamentals and social media management",
-  "Drone photography for property, events and business promotion",
   "Teaching experience — which is why I explain things without jargon",
 ];
 
@@ -83,12 +82,10 @@ function About() {
               <p>
                 That question led me to web development. I started with HTML and CSS in the evenings,
                 moved into JavaScript, and then completed professional training in web development,
-                digital marketing and drone photography — three skills that turn out to work
-                extremely well together for small businesses.
+                digital marketing, and then into building complete web products for real use.
               </p>
               <p>
-                Since then I&apos;ve been building steadily: landing pages, an enquiry desk, practice
-                business websites, and this site. Not to fill a portfolio grid, but because building
+                Since then I&apos;ve been building steadily: landing pages, the K-Tech Client Portal, RISE Hub, practice business websites, and this site. Not to fill a portfolio grid, but because building
                 real things is the only way I know to actually get better.
               </p>
               <p>
@@ -219,9 +216,9 @@ function About() {
           <h2 className="text-2xl font-bold sm:text-3xl">Where I&apos;m heading</h2>
           <div className="mt-6 grid gap-6 text-sm leading-relaxed text-muted-foreground sm:grid-cols-2 sm:text-base">
             <p>
-              Short term: become genuinely strong in full stack development, so I can build features
-              that store and serve data rather than only front-end screens. Alongside that, deepen my
-              Power BI work so reporting becomes a real part of what K-Tech offers.
+              Short term: deepen my full-stack engineering work, especially secure database-backed applications,
+              Web3 integration and product architecture. Alongside that, keep strengthening my data and
+              reporting skills where they are useful to businesses.
             </p>
             <p>
               Longer term: a small, trusted studio serving businesses across Plateau State and
