@@ -11,12 +11,12 @@ const description =
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services | Websites, Web Apps & Digital Support — K-Tech Solutions" },
+      { title: "Services | Websites, Web Apps & Digital Support — K-Tech Technologies" },
       { name: "description", content: description },
-      { property: "og:title", content: "Services | K-Tech Solutions" },
+      { property: "og:title", content: "Services | K-Tech Technologies" },
       { property: "og:description", content: description },
       { property: "og:url", content: "/services" },
-      { name: "twitter:title", content: "Services | K-Tech Solutions" },
+      { name: "twitter:title", content: "Services | K-Tech Technologies" },
       { name: "twitter:description", content: description },
     ],
     links: [{ rel: "canonical", href: "/services" }],
@@ -26,7 +26,7 @@ export const Route = createFileRoute("/services")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ItemList",
-          name: "K-Tech Solutions services",
+          name: "K-Tech Technologies services",
           itemListElement: serviceGroups.flatMap((group, gi) =>
             group.items.map((item, i) => ({
               "@type": "ListItem",
